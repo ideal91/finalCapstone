@@ -1,0 +1,114 @@
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "base/animations";
+
+@import "abstracts/mixins";
+@import "base/base";
+@import "base/typography";
+@import "abstracts/mixins";
+@import "base/utilities";
+@import "components/button";
+@import "components/composition";
+
+@import "layout/grid";
+@import "layout/header";
+@import "pages/home";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header-btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 40px;
+  border: 4px solid $color-white;
+  text-transform: uppercase;
+  color: $color-white;
+  text-decoration: none;
+  background: none;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 70px;
+  transform: 0.8s;
+  overflow: hidden;
+  backface-visibility: hidden;
+  animation: moveInTop 1s ease-in-out;
+  margin-top: 40px;
+  transition-property: color;
+  transition-delay: 0.25s;
+}
+.header-btn:hover {
+  cursor: pointer;
+  color: rgba($color-secondary, 0.92);
+  height: 180%;
+  font-size: 2rem;
+}
+.header-btn::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 0;
+  width: 100%;
+
+  background: $color-white;
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 20% 20%;
+}
+.header-btn:hover::before {
+  height: 200%;
+  width: 180%;
+}
+
+.container-shop {
+  width: 15rem;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+.ideal-bckgrnd {
+  height: 400px;
+
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 52%),
+    rgba($color-secondary, 0.92)
+  );
+
+  clip-path: circle(9% at 5% 25%);
+}
+
+.ideal {
+  height: 199px;
+  animation: idealMove 5s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.container-shop {
+  width: 15rem;
+}

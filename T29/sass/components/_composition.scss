@@ -1,0 +1,43 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+    position: absolute;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+
+    &--p1 {
+      left: -9px;
+      top: -4rem;
+    }
+    &--p2 {
+      left: 69px;
+      top: 5rem;
+    }
+    &--p3 {
+      left: 49%;
+      top: -1rem;
+    }
+    &:hover {
+      outline: 1.5rem solid rgb(103, 106, 112);
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+      z-index: 20;
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.9);
+  }
+}
+.work_in_plain {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding-top: 25rem;
+  margin-top: -15vh;
+  margin-bottom: -15vh;
+}
+.tittle_prices_section {
+  font-size: 4.5rem;
+}

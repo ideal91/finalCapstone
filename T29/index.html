@@ -1,0 +1,234 @@
+<!-- This is my main page. I put also my wife's picture given that also she is studying web developement -->
+<!-- here we can see different pictures, blocks with background pictures and links -->
+<!-- mainly I used sass, given that my mentors shared that it was allowed and that I feel 
+more comfortable with it -->
+<!-- all the images included in the HTML files have been uploaded using the  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Image uploaded with the relative path -->
+    <link rel="shortcut icon" href="img\LogoMakr-3fx3us.png" />
+    <title>
+      The Nest of Technology | The right developers for your buisness
+    </title>
+  </head>
+  <body>
+    <header class="bck-img">
+      <div class="logo-box">
+        <!-- Image uploaded with the relative path -->
+        <img src="logo-small.png" alt="Logo" class="logo" />
+      </div>
+      <div
+        class="bck-img-container-header-links"
+        style="
+          display: flex;
+          justify-content: end;
+          text-decoration: none;
+          font-size: 2rem;
+          padding-right: 4rem;
+          padding-top: 2.5rem;
+        "
+      >
+        <a
+          style="
+            text-decoration: none;
+            color: white;
+            letter-spacing: 1px;
+            font-family: Lato, sans-serif;
+            text-transform: uppercase;
+            padding-right: 1.5rem;
+          "
+          class="bck-img-container-header-links-header-links"
+          href="./items.html"
+          >Shop</a
+        >
+        <a
+          style="
+            text-decoration: none;
+            color: white;
+            letter-spacing: 1px;
+            font-family: Lato, sans-serif;
+            text-transform: uppercase;
+            padding-right: 1.5rem;
+          "
+          class="bck-img-container-header-links-header-links"
+          href="./saved.html"
+          >My List</a
+        >
+      </div>
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Webdevelopers</span>
+          <span class="heading-primary-sub">for you buisness' success</span>
+        </h1>
+
+        <!-- the contact.html path has been updated with the relative path as suggested -->
+        <a href="contact.html"><span class="header-btn">Contact Us</span></a>
+      </div>
+    </header>
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Efficient Web Ideas</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Your successful website
+            </h3>
+            <p class="paragraph">
+              Promote your business with the right website! The right developers
+              for your well-deserved boost.
+            </p>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Let them recognize your professionalism
+            </h3>
+            <p class="paragraph">
+              Promote your business with the right website! The right developers
+              for your well-deserved boost.
+            </p>
+            <a href="#our-job" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <!-- image uploaded with the relative path -->
+              <image
+                src="img\erisa.londonm.jpg"
+                class="composition__photo composition__photo--p1"
+              ></image>
+              <!-- image uploaded with the relative path  -->
+              <image
+                src="img\background.jpg"
+                class="composition__photo composition__photo--p2"
+              ></image>
+              <!-- image uploaded with the relative path  -->
+              <image
+                src="img\idi.fun.jpg"
+                class="composition__photo composition__photo--p3"
+              ></image>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- I have created some animations to show what we can do -->
+      <section id="our-job" class="section-our-job">
+        <h2 class="text-job">Our Job</h2>
+        <div class="row-job">
+          <div class="col-job">
+            <!-- image uploaded with the relative path  -->
+            <img src="img\website.Desktop.jpg" />
+            <div class="layer-job">
+              <h3 class="text-hover-job">Awsome Websites</h3>
+            </div>
+          </div>
+
+          <div class="col-job">
+            <!-- image uploaded with the relative path  -->
+            <img src="img\website.coding.jpg" />
+            <div class="layer-job">
+              <h3 class="text-hover-job">Cod Mintenance</h3>
+            </div>
+          </div>
+
+          <div class="col-job">
+            <!-- image uploaded with the relative path  -->
+            <img src="img\website.Mobile.jpg" />
+            <div class="layer-job">
+              <h3 class="text-hover-job">Mobile Friendly</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- here we have the footer, I have created links to my personal social networks -->
+      <footer id="find-us" class="footer">
+        <p class="footer__findus">Find Us On</p>
+        <div class="footer__container">
+          <!-- the aboutus.html path has been updated with the relative path as suggested -->
+          <a style="text-decoration: none" href="aboutus.html">
+            <div class="div-footer-erisa">
+              <!-- image uploaded with the relative path  -->
+              <img
+                class="footer__container__person__erisa footer__container__person div-footer-erisa__picture"
+                src="img\Erisa.No.Background.png"
+              />
+              <div class="erisa-name">
+                <p class="text-hover-job-erisa div-footer-erisa__name">Erisa</p>
+              </div>
+            </div>
+          </a>
+          <ul class="footer__container__ul">
+            <li>
+              <a class="list-social" href="http://instagram.com/_u/idealbacaj/">
+                <!-- image uploaded with the relative path  --><img
+                  class="footer__container__ul__social"
+                  src="img\instangram.png"
+                  alt="my instangram"
+                />
+                <p class="text-social">Instangram</p>
+              </a>
+            </li>
+            <li>
+              <a
+                class="list-social"
+                href="https://www.facebook.com/ideal.bacaj.1"
+              >
+                <!-- image uploaded with the relative path  -->
+                <img
+                  class="footer__container__ul__social"
+                  src="img\facebook.png"
+                  alt="my facebook"
+                />
+                <p class="text-social">Facebook</p>
+              </a>
+            </li>
+            <li>
+              <a
+                class="list-social"
+                href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+              >
+                <!-- image uploaded with the relative path  -->
+                <img
+                  class="footer__container__ul__social"
+                  src="img\tweeter.png"
+                  alt="my tweeter"
+                />
+                <p class="text-social">Tweeter</p>
+              </a>
+            </li>
+          </ul>
+
+          <!-- the aboutus.html path has been updated with the relative path as suggested -->
+          <a style="text-decoration: none" href="aboutus.html">
+            <div class="div-footer-ideal">
+              <p class="text-hover-job-ideal div-footer-ideal__text">Ideal</p>
+              <!-- image uploaded with the relative path  -->
+              <img
+                class="footer__container__person__ideal footer__container__person div-footer-ideal__picture"
+                src="img\Ideal.No.Back.png"
+              />
+              <div class="ideal-name"></div>
+            </div>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

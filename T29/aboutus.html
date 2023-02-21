@@ -1,0 +1,206 @@
+<!-- I created also a page dedicated to some information
+in this page we can see also the table, images and radio button. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <link
+      href="/your-path-to-your-compiled-css-including-fontawesome/file.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- image uploaded using the relative path -->
+
+    <link rel="shortcut icon" href="img\LogoMakr-3fx3us.png" />
+    <title>About Us</title>
+  </head>
+  <body style="padding: 2rem">
+    <header class="bck-img">
+      <div class="container-about">
+        <div class="container-about__title">
+          <!-- the index.html path has been updated with the relative path as suggested -->
+          <a href="index.html">
+            <!-- image uploaded using the relative path -->
+            <img
+              class="container-about__title__logo"
+              src="img\logo-small.png"
+              alt="Logo"
+            />
+          </a>
+          <p class="container-about__title__text">A Bit About Us</p>
+        </div>
+        <div class="container-about__all-lines container-about__first-line">
+          <!-- image uploaded using the relative path -->
+          <img
+            style="height: 18rem"
+            class="container-about__first-line__img"
+            src="img\Erisa.No.Background.png"
+            alt="Erisa About"
+          />
+          <p class="container-about__first-line__text">
+            "Hi, I enjoy loosing myself in the projects and the greate feeling
+            you get when is done. In my free time I love running in the nature
+            and enjoy the World outside!"
+          </p>
+        </div>
+        <div class="container-about__all-lines container-about__second-line">
+          <p class="container-about__second-line__text">
+            "Hey! A new project, means a new challenge to myself, and a new
+            challenge means a better way to live! I also love running and the
+            best place is just somewhere in the nature."
+          </p>
+          <!-- image uploaded using the relative path -->
+          <img
+            style="height: 18rem"
+            class="container-about__second-line__img"
+            src="img\Ideal.No.Back.png"
+            alt="Ideal About"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- here I created a div used to show some fake testimonials -->
+    <div class="div-table">
+      <table class="container-about__all-lines">
+        <thead>
+          <tr>
+            <th colspan="2" style="font-size: 3.5rem">Our Clients & Works</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td">Jack Blue</td>
+            <td class="td td2">The Paradise Of The Wine</td>
+          </tr>
+          <tr>
+            <td class="td">Pablo Himenez</td>
+            <td class="td td2">El Restaurante Del Mar</td>
+          </tr>
+          <tr>
+            <td class="td">Luca Rossi</td>
+            <td class="td td2">La Sartoria Blu</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top: 30rem">
+      <div class="testimonials">
+        <div class="inner">
+          <h6>Testimonials</h6>
+          <div class="border"></div>
+
+          <div class="row">
+            <div class="col">
+              <div class="testimonial">
+                <!-- image uploaded using the relative path -->
+                <img src="img\pexels-andrea-piacquadio-733872.jpg" />
+                <div class="name">Julia Blanco</div>
+
+                <p class="text-col">
+                  "Amazing company! Professional and <br />
+                  always available. I am very happy with their work, strongly
+                  suggested!"
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="testimonial">
+                <!-- image uploaded using the relative path -->
+                <img src="img\pexels-creation-hill-1681010.jpg" />
+                <div class="name">Jack Johnson</div>
+
+                <p class="text-col">
+                  "I would say they are the right developers if your goal <br />
+                  is to have a good product with a resonable price! <br />
+                  Go for it!"
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial">
+                <!-- image uploaded using the relative path -->
+                <img src="img\pexels-pixabay-220453.jpg" />
+                <div class="name">Mario Rossi</div>
+
+                <p class="text-col">
+                  "Friendly team and very welcoming. My experience was positive.
+                  <br />
+                  The prices as well are very reasobnable "
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-form">
+      <p
+        style="
+          font-family: Sofia, sans-serif;
+          font-size: 45px;
+          text-align: center;
+          margin-top: 18rem;
+        "
+      >
+        Let us know which page did you enjoy the most
+      </p>
+      <form>
+         
+        <input
+          class="form-height"
+          type="radio"
+          id="html"
+          name="fav_language"
+          value="HTML"
+        />
+         
+        <label class="form-height" for="html" style="font-size: 1.5rem"
+          >Home</label
+        ><br />
+         
+        <input
+          class="form-height"
+          type="radio"
+          id="css"
+          name="fav_language"
+          value="CSS"
+        />
+         
+        <label class="form-height" for="css" style="font-size: 1.5rem"
+          >Contact</label
+        ><br />
+         
+        <input
+          class="form-height"
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+         
+        <label class="form-height" for="javascript" style="font-size: 1.5rem"
+          >About Us</label
+        >
+      </form>
+    </div>
+  </body>
+</html>

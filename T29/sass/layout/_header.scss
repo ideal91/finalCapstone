@@ -1,0 +1,57 @@
+.bck-img {
+  height: 95vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right bottom,
+      ($color-primary),
+      ($color-secondary)
+    ),
+    url(../img/road-gadcf5c757_1920.jpg);
+  block-size: cover;
+  background-position: top;
+  background-size: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.logo {
+  height: 175px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+
+  .heading-primary-main {
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 35px;
+
+    animation: moveInLeft 1s ease-in-out;
+  }
+
+  .heading-primary-sub {
+    display: block;
+    font-size: 18.4px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+
+    animation: moveInRight 1s ease-out;
+  }
+}
